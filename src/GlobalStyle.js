@@ -2,63 +2,63 @@ import styled from "styled-components/macro";
 import { createGlobalStyle } from "styled-components";
 
 export const theme = {
-    // Header Height
-    HeaderHeight: '3rem',
+  // Header Height
+  HeaderHeight: '3rem',
 
-    // Colors
-    color: {
-        firstColor: "#3e0e12",
-        firstColorDark: "#2f0a0d",
-        textColor: "#524748",
-        firstColorLight: "#7b6f71",
-        firstColorLighten: "#f8f9f9"
-    },
+  // Colors
+  color: {
+    firstColor: "#3e0e12",
+    firstColorDark: "#2f0a0d",
+    textColor: "#524748",
+    firstColorLight: "#7b6f71",
+    firstColorLighten: "#f8f9f9"
+  },
 
-    // Fonts and Typography
-    font: {
-        bodyFont: "'Roboto', sans-serif",
-        bigFontSize: "2.5rem",
-        h1FontSize: "1.5rem",
-        h2FontSize: "1.25rem",
-        h3fontSize: "1.125rem",
-        normalFontSize: "0.938rem",
-        smallFontSize: "0.813rem",
-        smallerFontSize: "0.75rem",
-        fontWeight: {
-            medium: "300",
-            semiBold: "400",
-            bold: "700"
-        }
-    },
-
-    // Margins
-    margin: {
-        mb_1: "0.5rem",
-        mb_2: "1rem",
-        mb_3: "1.5rem",
-        mb_4: "2rem",
-        mb_5: "2.5rem",
-        mb_6: "3rem"
-    },
-
-    // Z-Index
-    zIndex: {
-        zNormal: "1",
-        zTooltip: "10",
-        zScroll: "100",
-        zHeader: "200"
-    },
-
-    // ResponsiveFonts ==== min-width: 768px ====
-    resFont: {
-        bigFontSize: "4.5rem",
-        h1FontSize: "2.25rem",
-        h2FontSize: "1.5rem",
-        h3fontSize: "1.25rem",
-        normalFontSize: "1rem",
-        smallFontSize: "0.875rem",
-        smallerFontSize: "0.813rem",
+  // Fonts and Typography
+  font: {
+    bodyFont: "'Roboto', sans-serif",
+    bigFontSize: "2.5rem",
+    h1FontSize: "1.5rem",
+    h2FontSize: "1.25rem",
+    h3fontSize: "1.125rem",
+    normalFontSize: "0.938rem",
+    smallFontSize: "0.813rem",
+    smallerFontSize: "0.75rem",
+    fontWeight: {
+      medium: "300",
+      semiBold: "400",
+      bold: "700"
     }
+  },
+
+  // Margins
+  margin: {
+    mb_1: "0.5rem",
+    mb_2: "1rem",
+    mb_3: "1.5rem",
+    mb_4: "2rem",
+    mb_5: "2.5rem",
+    mb_6: "3rem"
+  },
+
+  // Z-Index
+  zIndex: {
+    zNormal: "1",
+    zTooltip: "10",
+    zScroll: "100",
+    zHeader: "200"
+  },
+
+  // ResponsiveFonts ==== min-width: 768px ====
+  resFont: {
+    bigFontSize: "4.5rem",
+    h1FontSize: "2.25rem",
+    h2FontSize: "1.5rem",
+    h3fontSize: "1.25rem",
+    normalFontSize: "1rem",
+    smallFontSize: "0.875rem",
+    smallerFontSize: "0.813rem",
+  }
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -112,6 +112,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// Section Components
+
 export const Section = styled.section`
   padding: 4rem 0 2rem;
 `;
@@ -127,4 +129,12 @@ export const SectionSubtitle = styled.span`
   text-align: center;
   font-size: ${({ theme }) => theme.font.smallerFontSize};
   font-weight: ${({ theme }) => theme.font.fontWeight.semiBold};
+`;
+
+// Layout Components
+export const Container = styled.div`
+  max-width: 1024px;
+  width: calc(100%);
+  margin-left: ${({ theme }) => theme.margin.mb_2};
+  margin-right: ${({ theme }) => theme.margin.mb_2};
 `;
