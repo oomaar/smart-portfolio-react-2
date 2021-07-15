@@ -8,7 +8,6 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Application>
-        <h1>Hello Life !</h1>
         <Header />
       </Application>
     </ThemeProvider>
