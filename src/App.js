@@ -1,7 +1,7 @@
 import { GlobalStyle, theme } from "./GlobalStyle";
 import { ThemeProvider } from 'styled-components';
 import styled from "styled-components/macro";
-import { Header, Home, Scrollup } from "./Components";
+import { About, Header, Home, Scrollup } from "./Components";
 import resumeData from "./data/resumeData.json";
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
         <Header data={resumeData.header} />
         <Main>
           <Home />
+          <About />
         </Main>
       </Application>
     </ThemeProvider>
