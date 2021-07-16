@@ -119,7 +119,7 @@ export const Section = styled.section`
   overflow: ${({ home }) => home && "hidden"};
 `;
 
-export const SectionTitle = styled.h1`
+export const SectionTitle = styled.h2`
   text-align: center;
   font-size: ${({ theme }) => theme.font.h1FontSize};
   color: ${({ theme }) => theme.color.firstColor};
