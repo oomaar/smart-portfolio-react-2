@@ -113,9 +113,10 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 // Section Components
-
 export const Section = styled.section`
   padding: 4rem 0 2rem;
+  background: ${({ home }) => home && "#000"};
+  overflow: ${({ home }) => home && "hidden"};
 `;
 
 export const SectionTitle = styled.h1`
@@ -137,4 +138,9 @@ export const Container = styled.div`
   width: calc(100% - 2rem);
   margin-left: ${({ theme }) => theme.margin.mb_2};
   margin-right: ${({ theme }) => theme.margin.mb_2};
+`;
+
+// Buttons
+export const Button = styled.a`
+
 `;
