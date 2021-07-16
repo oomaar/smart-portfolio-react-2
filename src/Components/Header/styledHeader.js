@@ -22,7 +22,7 @@ export const Logo = styled.a`
 `;
 
 export const NavMenu = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
       position: fixed;
       top: ${({ theme, show }) => show ? theme.HeaderHeight : "-100%"};
       left: 0;
