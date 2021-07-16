@@ -1,7 +1,7 @@
 import { GlobalStyle, theme } from "./GlobalStyle";
 import { ThemeProvider } from 'styled-components';
 import styled from "styled-components/macro";
-import { Header } from "./Components";
+import { Header, Scrollup } from "./Components";
 import resumeData from "./data/resumeData.json";
 
 const App = () => {
@@ -9,6 +9,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Application>
+        <Scrollup />
         <Header data={resumeData.header} />
         <p>TEST</p>
         <p>TEST</p>
