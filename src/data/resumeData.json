@@ -25,5 +25,22 @@
       "name": "Contact",
       "href": "#contact"
     }
-  ]
+  ],
+  "about": {
+    "description": "Freelance frontend developer, I am passionate about creating and devloping web interfaces. With years of experience in web-design and development.",
+    "experience": [
+      {
+        "number": "05",
+        "achevement": "Years of experience"
+      },
+      {
+        "number": "29",
+        "achevement": "Projects completes"
+      },
+      {
+        "number": "07",
+        "achevement": "Best work awards"
+      }
+    ]
+  }
 }
