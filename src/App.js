@@ -13,7 +13,7 @@ const App = () => {
         <Header data={resumeData.header} />
         <Main>
           <Home />
-          <About />
+          <About data={resumeData.about} />
         </Main>
       </Application>
     </ThemeProvider>
