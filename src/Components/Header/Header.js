@@ -25,7 +25,7 @@ export const Header = ({ data }) => {
     const links = data.map(link => (
         <NavItem key={link.id}>
             <NavLink
-                scrollHeader={scrollHeader}
+                scrollheader={scrollHeader.toString()}
                 href={link.href}
                 to={link.href}
                 smooth={true}

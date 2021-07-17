@@ -54,10 +54,10 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   margin-bottom: ${({ theme }) => theme.margin.mb_4};
-`;
+  `;
 
 export const NavLink = styled(ScrollLink)`
-  color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorDark : theme.color.firstColorLighten};
+  color: ${({ theme, scrollheader }) => scrollheader ? theme.color.firstColorDark : theme.color.firstColorLighten};
 
   :hover {
     color: ${({ theme }) => theme.color.firstColorLight};
