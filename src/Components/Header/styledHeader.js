@@ -57,7 +57,7 @@ export const NavItem = styled.li`
   `;
 
 export const NavLink = styled(ScrollLink)`
-  color: ${({ theme, scrollheader }) => scrollheader ? theme.color.firstColorDark : theme.color.firstColorLighten};
+  color: ${({ theme, scrollheader }) => scrollheader === "true" ? theme.color.firstColorDark : theme.color.firstColorLighten};
 
   :hover {
     color: ${({ theme }) => theme.color.firstColorLight};
