@@ -42,5 +42,41 @@
         "achevement": "Best work awards"
       }
     ]
+  },
+  "qualification": {
+    "education": [
+      {
+        "id": 1,
+        "title": "Computer technican",
+        "place": "Lima - Computer institute",
+        "date": "Apr 2015 - Dec 2018"
+      },
+      {
+        "id": 2,
+        "title": "Master in web developer",
+        "place": "Madrid - Design institute",
+        "date": "Jan 2019 - Aug 2020"
+      }
+    ],
+    "work": [
+      {
+        "id": 1,
+        "title": "Senior Front End Developer",
+        "place": "Abobe - New York",
+        "date": "Jan 2019 - Aug 2019"
+      },
+      {
+        "id": 2,
+        "title": "Ui / UX Designer",
+        "place": "Figma - Lima",
+        "date": "Oct 2019 - Dec 2019"
+      },
+      {
+        "id": 3,
+        "title": "Web Designer",
+        "place": "Applie Inc - California",
+        "date": "Jan 2020 - May 2020"
+      }
+    ]
   }
 }
