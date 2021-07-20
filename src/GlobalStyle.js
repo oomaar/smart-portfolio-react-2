@@ -127,9 +127,10 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionSubtitle = styled.span`
-  text-align: center;
   font-size: ${({ theme }) => theme.font.smallerFontSize};
   font-weight: ${({ theme }) => theme.font.fontWeight.semiBold};
+  display: flex;
+  justify-content: center;
 `;
 
 // Layout Components
