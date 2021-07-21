@@ -3,27 +3,27 @@
     {
       "id": 1,
       "name": "Home",
-      "href": "#home"
+      "href": "home"
     },
     {
       "id": 2,
       "name": "About",
-      "href": "#about"
+      "href": "about"
     },
     {
       "id": 3,
       "name": "Services",
-      "href": "#services"
+      "href": "services"
     },
     {
       "id": 4,
       "name": "Portfolio",
-      "href": "#portfolio"
+      "href": "portfolio"
     },
     {
       "id": 5,
       "name": "Contact",
-      "href": "#contact"
+      "href": "contact"
     }
   ],
   "about": {
