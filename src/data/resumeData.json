@@ -98,5 +98,16 @@
       "description": "Service that I offer and work, with years of experience in the work area.",
       "icon": "bx bx-pen"
     }
-  ]
+  ],
+  "portfolio": {
+    "webDevelopment": [
+      {
+        "id": "project-1",
+        "subTitle": "web development",
+        "title": "New portfolio of work done for a client.",
+        "img": "img/work1.jpg",
+        "link": "#"
+      }
+    ]
+  }
 }

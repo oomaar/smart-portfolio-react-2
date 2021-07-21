@@ -26,7 +26,7 @@ const App = () => {
           <Qualification data={resumeData.qualification} />
           <Services data={resumeData.services} />
           <Project />
-          <Portfolio />
+          <Portfolio data={resumeData.portfolio} />
         </Main>
       </Application>
     </ThemeProvider>
