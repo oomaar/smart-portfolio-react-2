@@ -26,7 +26,6 @@ export const Header = ({ data }) => {
         <NavItem key={link.id}>
             <NavLink
                 scrollheader={scrollHeader.toString()}
-                href={link.href}
                 to={link.href}
                 smooth={true}
                 duration={50}
