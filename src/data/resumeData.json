@@ -78,5 +78,25 @@
         "date": "Jan 2020 - May 2020"
       }
     ]
-  }
+  },
+  "services": [
+    {
+      "id": "service-1",
+      "title": "Ui/Ux Design",
+      "description": "Service that I offer and work, with years of experience in the work area.",
+      "icon": "bx bx-palette"
+    },
+    {
+      "id": "service-2",
+      "title": "Web Development",
+      "description": "Service that I offer and work, with years of experience in the work area.",
+      "icon": "bx bx-laptop"
+    },
+    {
+      "id": "service-3",
+      "title": "Graphic Design",
+      "description": "Service that I offer and work, with years of experience in the work area.",
+      "icon": "bx bx-pen"
+    }
+  ]
 }
