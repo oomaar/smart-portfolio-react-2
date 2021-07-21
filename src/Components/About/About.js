@@ -12,7 +12,7 @@ export const About = ({ data }) => {
     const experience = data.experience;
 
     return (
-        <Section>
+        <Section id="about">
             <Container>
                 <SectionSubtitle>My history</SectionSubtitle>
                 <SectionTitle>About me</SectionTitle>
