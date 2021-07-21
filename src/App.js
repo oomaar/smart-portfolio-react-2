@@ -15,7 +15,7 @@ const App = () => {
           <Home />
           <About data={resumeData.about} />
           <Qualification data={resumeData.qualification} />
-          <Services />
+          <Services data={resumeData.services} />
         </Main>
       </Application>
     </ThemeProvider>
