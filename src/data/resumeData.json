@@ -102,10 +102,49 @@
   "portfolio": {
     "webDevelopment": [
       {
-        "id": "project-1",
+        "id": 1,
         "subTitle": "web development",
         "title": "New portfolio of work done for a client.",
         "img": "img/work1.jpg",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "subTitle": "web development",
+        "title": "New portfolio of work done for a client.",
+        "img": "img/work2.jpg",
+        "link": "#"
+      }
+    ],
+    "uxDesign": [
+      {
+        "id": 1,
+        "subTitle": "Ux design",
+        "title": "New portfolio of work done for a client.",
+        "img": "img/work3.jpg",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "subTitle": "Ux design",
+        "title": "New portfolio of work done for a client.",
+        "img": "img/work4.jpg",
+        "link": "#"
+      }
+    ],
+    "mobileApp": [
+      {
+        "id": 1,
+        "subTitle": "Mobile app",
+        "title": "New portfolio of work done for a client.",
+        "img": "img/work5.jpg",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "subTitle": "Mobile app",
+        "title": "New portfolio of work done for a client.",
+        "img": "img/work6.jpg",
         "link": "#"
       }
     ]
