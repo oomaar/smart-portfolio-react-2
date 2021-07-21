@@ -1,7 +1,16 @@
 import { GlobalStyle, theme } from "./GlobalStyle";
 import { ThemeProvider } from 'styled-components';
 import styled from "styled-components/macro";
-import { About, Header, Home, Project, Qualification, Scrollup, Services } from "./Components";
+import {
+  About,
+  Header,
+  Home,
+  Portfolio,
+  Project,
+  Qualification,
+  Scrollup,
+  Services
+} from "./Components";
 import resumeData from "./data/resumeData.json";
 
 const App = () => {
@@ -17,6 +26,7 @@ const App = () => {
           <Qualification data={resumeData.qualification} />
           <Services data={resumeData.services} />
           <Project />
+          <Portfolio />
         </Main>
       </Application>
     </ThemeProvider>
