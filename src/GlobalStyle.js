@@ -144,13 +144,14 @@ export const Container = styled.div`
 // Buttons
 export const Button = styled.a`
   display: inline-block;
-  background-color: ${({ theme, light }) => light ? theme.color.firstColorLight : theme.color.firstColor};
-  color: ${({ theme }) => theme.color.firstColorLighten};
+  background-color: ${({ theme, light, white }) => light ? theme.color.firstColorLight : white ? theme.color.firstColorLighten : theme.color.firstColor};
+  color: ${({ theme, white }) => white ? theme.color.firstColorDark : theme.color.firstColorLighten};
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
   transition: 0.3s;
 
   :hover {
-    background-color: ${({ theme }) => theme.color.firstColorDark};
+    background-color: ${({ theme, white }) => white ? theme.color.firstColorLighten : theme.color.firstColorDark};
+    opacity: ${({ white }) => white && "0.9"};
   }
 `;
