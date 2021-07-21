@@ -1,9 +1,10 @@
-import { Container, Section } from "../../GlobalStyle";
+import { Button, Container, Section } from "../../GlobalStyle";
 import {
     ProjectContainer,
     ProjectData,
     ProjectIcon,
     ProjectTitle,
+    ProjectDescription,
 } from "./styledProject";
 
 export const Project = () => {
@@ -17,9 +18,14 @@ export const Project = () => {
                         </ProjectIcon>
 
                         <div>
-                            <ProjectTitle>
+                            <ProjectTitle>Project in mind</ProjectTitle>
+                            <ProjectDescription>
                                 Hire me to carry out the followind projects.
-                            </ProjectTitle>
+                            </ProjectDescription>
+                        </div>
+
+                        <div>
+                            <Button white>Hire Me</Button>
                         </div>
                     </ProjectData>
                 </ProjectContainer>
