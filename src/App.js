@@ -9,7 +9,8 @@ import {
   Project,
   Qualification,
   Scrollup,
-  Services
+  Services,
+  Testimonial
 } from "./Components";
 import resumeData from "./data/resumeData.json";
 
@@ -27,6 +28,7 @@ const App = () => {
           <Services data={resumeData.services} />
           <Project />
           <Portfolio data={resumeData.portfolio} />
+          <Testimonial />
         </Main>
       </Application>
     </ThemeProvider>
