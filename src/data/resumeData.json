@@ -148,5 +148,25 @@
         "link": "#"
       }
     ]
-  }
+  },
+  "testimonial": [
+    {
+      "id": 1,
+      "img": "img/testimonial1.jpg",
+      "name": "Nik Holly",
+      "description": "This company does a very good service, offers the best deals and does a good job, I recommend it."
+    },
+    {
+      "id": 2,
+      "img": "img/testimonial2.jpg",
+      "name": "Sara Mill",
+      "description": "This company does a very good service, offers the best deals and does a good job, I recommend it."
+    },
+    {
+      "id": 3,
+      "img": "img/testimonial3.jpg",
+      "name": "Clay Mitchell",
+      "description": "This company does a very good service, offers the best deals and does a good job, I recommend it."
+    }
+  ]
 }

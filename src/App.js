@@ -28,7 +28,7 @@ const App = () => {
           <Services data={resumeData.services} />
           <Project />
           <Portfolio data={resumeData.portfolio} />
-          <Testimonial />
+          <Testimonial data={resumeData.testimonial} />
         </Main>
       </Application>
     </ThemeProvider>
