@@ -149,6 +149,10 @@ export const Button = styled.a`
   padding: ${({ link }) => link ? "0" : "0.75rem 1rem"};
   border-radius: 0.25rem;
   transition: 0.3s;
+  outline: ${({ contact }) => contact && "0"};
+  font-family: ${({ theme, contact }) => contact && theme.font.bodyFont};
+  font-size: ${({ theme, contact }) => contact && theme.font.normalFontSize};
+  border: ${({ contact }) => contact && "none"};
 
   :hover {
     background-color: ${({ theme, white, link }) => white ? theme.color.firstColorLighten : link ? "none" : theme.color.firstColorDark};
