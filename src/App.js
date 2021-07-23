@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import styled from "styled-components/macro";
 import {
   About,
+  Contact,
   Header,
   Home,
   Portfolio,
@@ -29,6 +30,7 @@ const App = () => {
           <Project />
           <Portfolio data={resumeData.portfolio} />
           <Testimonial data={resumeData.testimonial} />
+          <Contact />
         </Main>
       </Application>
     </ThemeProvider>
