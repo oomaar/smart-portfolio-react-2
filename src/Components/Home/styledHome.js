@@ -9,6 +9,11 @@ export const HomeContainer = styled.div`
   grid-template-columns: repeat(2fr, max-content);
   align-content: space-around;
   row-gap: 2rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-rows: max-content 0.5fr;
+    align-content: flex-end;
+  }
 `;
 
 export const HomeData = styled.div`
@@ -22,10 +27,18 @@ export const HomeGreeting = styled.span`
   display: block;
   font-weight: ${({ theme }) => theme.font.fontWeight.bold};
   font-size: 0.813rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const HomeName = styled.h1`
   font-size: ${({ theme }) => theme.font.bigFontSize};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.bigFontSize};
+  }
 `;
 
 export const HomeProfession = styled.span`
@@ -33,11 +46,20 @@ export const HomeProfession = styled.span`
   font-weight: ${({ theme }) => theme.font.fontWeight.bold};
   font-size: 0.938rem;
   margin-bottom: ${({ theme }) => theme.margin.mb_3};
+
+  @media screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const HomeSocial = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 export const HomeSocialIcon = styled.a`
@@ -48,6 +70,10 @@ export const HomeSocialIcon = styled.a`
 
   :hover {
     color: ${({ theme }) => theme.color.firstColorLight};
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 ${({ theme }) => theme.margin.mb_2};
   }
 `;
 
@@ -62,5 +88,9 @@ export const Image = styled.img`
 
   @media screen and (min-width: 576px) {
     width: 330px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 440px;
   }
 `;
