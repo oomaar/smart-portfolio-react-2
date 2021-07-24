@@ -18,6 +18,7 @@ export const Nav = styled.nav`
 
   @media screen and (min-width: 768px) {
     height: calc(${({ theme }) => theme.HeaderHeight} + 1.5rem);
+    padding: 0 0.5rem;
   }
 `;
 
@@ -27,16 +28,16 @@ export const Logo = styled.a`
 
 export const NavMenu = styled.div`
   @media screen and (max-width: 768px) {
-      position: fixed;
-      top: ${({ theme, show }) => show ? theme.HeaderHeight : "-100%"};
-      left: 0;
-      width: 100%;
-      padding-top: 1.5rem;
-      text-align: center;
-      background-color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorLighten : '#000'};
-      transition: 0.4s;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 0 0 1rem 1rem;
+    position: fixed;
+    top: ${({ theme, show }) => show ? theme.HeaderHeight : "-100%"};
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorLighten : '#000'};
+    transition: 0.4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
   }
 `;
 
