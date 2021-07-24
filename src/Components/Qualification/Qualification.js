@@ -4,6 +4,7 @@ import {
     QualificationTitle,
     QualificationIcon,
     QualificationGrid,
+    QualificationSubcontainer,
     QualificationArea,
     QualificationBox,
     QualificationWork,
@@ -12,7 +13,7 @@ import {
 
 export const Qualification = ({ data }) => {
     const workData = data.work.map(work => (
-        <div key={work.id}>
+        <QualificationSubcontainer key={work.id}>
             <QualificationArea>{work.title}</QualificationArea>
             <QualificationBox>
                 <QualificationWork>
@@ -28,11 +29,11 @@ export const Qualification = ({ data }) => {
                     {work.date}
                 </QualificationWork>
             </QualificationBox>
-        </div>
+        </QualificationSubcontainer>
     ));
 
     const educationData = data.education.map(education => (
-        <div key={education.id}>
+        <QualificationSubcontainer key={education.id}>
             <QualificationArea>{education.title}</QualificationArea>
 
             <QualificationBox>
@@ -49,7 +50,7 @@ export const Qualification = ({ data }) => {
                     {education.date}
                 </QualificationWork>
             </QualificationBox>
-        </div>
+        </QualificationSubcontainer>
     ));
 
     return (

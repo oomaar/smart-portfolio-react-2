@@ -27,6 +27,10 @@ export const QualificationGrid = styled.div`
   gap: 1.5rem;
 `;
 
+export const QualificationSubcontainer = styled.div`
+  padding: 1rem;
+`;
+
 export const QualificationArea = styled.h3`
   font-size: ${({ theme }) => theme.font.normalFontSize};
   color: ${({ theme }) => theme.color.firstColor};
@@ -37,6 +41,11 @@ export const QualificationBox = styled.div`
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   font-weight: ${({ theme }) => theme.font.fontWeight.medium};
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const QualificationWork = styled.span`
