@@ -15,6 +15,10 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    height: calc(${({ theme }) => theme.HeaderHeight} + 1.5rem);
+  }
 `;
 
 export const Logo = styled.a`
@@ -50,11 +54,19 @@ export const NavList = styled.ul`
         background-color: ${({ theme }) => theme.color.firstColorLight};
       }
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 export const NavItem = styled.li`
   margin-bottom: ${({ theme }) => theme.margin.mb_4};
-  `;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 ${({ theme }) => theme.margin.mb_3};
+  }
+`;
 
 export const NavLink = styled(ScrollLink)`
   color: ${({ theme, scrollheader }) => scrollheader === "true" ? theme.color.firstColorDark : theme.color.firstColorLighten};
@@ -68,4 +80,8 @@ export const NavToggle = styled.div`
   color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorDark : theme.color.firstColorLighten};
   font-size: 1.3rem;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
