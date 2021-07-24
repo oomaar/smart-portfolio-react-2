@@ -1,4 +1,28 @@
-import styled from 'styled-components/macro';
+import styled, { keyframes } from 'styled-components/macro';
+
+const ImageAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const HomeDataAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const HomeContainer = styled.div`
   display: grid;
@@ -21,6 +45,7 @@ export const HomeData = styled.div`
   color: ${({ theme }) => theme.colorfirstColorLighten};
   padding-left: 1.5rem;
   z-index: ${({ theme }) => theme.zIndex.zTooltip};
+  animation: ${HomeDataAnimation} 2s linear none 0.8s;
 `;
 
 export const HomeGreeting = styled.span`
@@ -85,6 +110,7 @@ export const HomeImage = styled.div`
 
 export const Image = styled.img`
   width: 240px;
+  animation: ${ImageAnimation} 2s linear none 0.5s;
 
   @media screen and (min-width: 576px) {
     width: 330px;
