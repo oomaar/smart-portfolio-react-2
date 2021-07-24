@@ -3,6 +3,7 @@ import {
     AboutContainer,
     AboutData,
     AboutDescription,
+    AboutGreeting,
     AboutNumber,
     AboutImage,
 } from "./styledAbout";
@@ -20,7 +21,7 @@ export const About = ({ data }) => {
                 <AboutContainer>
                     <AboutData>
                         <AboutDescription>
-                            <span>Hello, I am a <br /></span>
+                            <AboutGreeting>Hello, I am a <br /></AboutGreeting>
                             {description}
                         </AboutDescription>
 

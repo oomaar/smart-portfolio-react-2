@@ -19,16 +19,35 @@ export const AboutDescription = styled.p`
   font-size: ${({ theme }) => theme.font.h2FontSize};
   font-weight: ${({ theme }) => theme.font.fontWeight.semiBold};
   color: ${({ theme }) => theme.color.firstColor};
-  `;
+  
+  @media screen and (min-width: 768px) {
+    text-align: initial;
+  }
+`;
+
+export const AboutGreeting = styled.span`
+  display: block;
+  font-weight: ${({ theme }) => theme.font.fontWeight.bold};
+  font-size: 0.813rem;
+  margin-bottom: ${({ theme }) => theme.margin.mb_1};
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.7rem;
+  }
+`;
 
 export const AboutNumber = styled.span`
   display: block;
   font-size: ${({ theme }) => theme.font.h1FontSize};
   color: ${({ theme }) => theme.color.firstColor};
-  `;
+`;
 
 export const AboutImage = styled.img`
   justify-self: center;
   width: 220px;
   border-radius: 0.5rem;
+
+  @media screen and (min-width: 768px) {
+    width: 300px;
+  }
 `;
