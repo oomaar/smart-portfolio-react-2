@@ -24,6 +24,29 @@ const HomeDataAnimation = keyframes`
   }
 `;
 
+const SocialBounce = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+`;
+
 export const HomeContainer = styled.div`
   display: grid;
   gap: 1.5rem;
@@ -92,6 +115,7 @@ export const HomeSocialIcon = styled.a`
   font-size: 1.3rem;
   margin-bottom: ${({ theme }) => theme.margin.mb_2};
   color: ${({ theme }) => theme.color.firstColorLighten};
+  animation: ${SocialBounce} 2s ease-out 0s none;
 
   :hover {
     color: ${({ theme }) => theme.color.firstColorLight};
