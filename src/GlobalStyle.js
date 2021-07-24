@@ -150,8 +150,11 @@ export const SectionSubtitle = styled.span`
 export const Container = styled.div`
   max-width: 1024px;
   width: calc(100% - 2rem);
-  margin-left: ${({ theme }) => theme.margin.mb_2};
-  margin-right: ${({ theme }) => theme.margin.mb_2};
+  margin: 0 ${({ theme }) => theme.margin.mb_2};
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 auto;
+  }
 `;
 
 // Buttons

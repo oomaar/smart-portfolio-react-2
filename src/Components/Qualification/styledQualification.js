@@ -7,6 +7,10 @@ export const QualificationContainer = styled.div`
   @media screen and (min-width: 576px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media screen and (min-width: 1024px) {
+    column-gap: 6rem;
+  }
 `;
 
 export const QualificationTitle = styled.h3`
