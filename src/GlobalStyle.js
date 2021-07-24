@@ -117,6 +117,10 @@ export const Section = styled.section`
   padding: 4rem 0 2rem;
   background: ${({ home }) => home && "#000"};
   overflow: ${({ home }) => home && "hidden"};
+
+  @media screen and (min-width: 768px) {
+    padding-top: 6rem;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -124,6 +128,11 @@ export const SectionTitle = styled.h2`
   font-size: ${({ theme }) => theme.font.h1FontSize};
   color: ${({ theme }) => theme.color.firstColor};
   margin-bottom: ${({ theme }) => theme.margin.mb_3};
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: ${({ theme }) => theme.margin.mb_3};
+    font-size: ${({ theme }) => theme.resFont.h1FontSize};
+  }
 `;
 
 export const SectionSubtitle = styled.span`
@@ -131,6 +140,10 @@ export const SectionSubtitle = styled.span`
   font-weight: ${({ theme }) => theme.font.fontWeight.semiBold};
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.smallerFontSize};
+  }
 `;
 
 // Layout Components
@@ -157,5 +170,9 @@ export const Button = styled.a`
   :hover {
     background-color: ${({ theme, white, link }) => white ? theme.color.firstColorLighten : link ? "none" : theme.color.firstColorDark};
     opacity: ${({ white }) => white && "0.9"};
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme, contact }) => contact && theme.resFont.normalFontSize};
   }
 `;
