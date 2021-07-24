@@ -30,9 +30,9 @@ export const About = ({ data }) => {
                                 <span>{exp.achevement}</span>
                             </div>
                         ))}
-
-                        <AboutImage src="/img/about.jpg" />
                     </AboutData>
+
+                    <AboutImage src="/img/about.jpg" />
                 </AboutContainer>
             </Container>
         </Section>
