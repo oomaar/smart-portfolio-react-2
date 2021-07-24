@@ -173,5 +173,10 @@
     "location": "#123 Lima-peru",
     "email": "email@gmail.com",
     "phone": "+0-999-888-777"
+  },
+  "footer": {
+    "title": "Omar Hassan",
+    "description": "I'm Omar Hassan and this is my personal website, consult me here.",
+    "copy": "2021 Omaar. All Rights Reserved."
   }
 }

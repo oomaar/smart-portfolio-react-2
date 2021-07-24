@@ -33,7 +33,7 @@ const App = () => {
           <Testimonial data={resumeData.testimonial} />
           <Contact data={resumeData.contact} />
         </Main>
-        <Footer />
+        <Footer data={resumeData.footer} />
       </Application>
     </ThemeProvider>
   );
