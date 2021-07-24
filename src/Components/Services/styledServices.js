@@ -7,6 +7,10 @@ export const ServicesContainer = styled.div`
   @media screen and (min-width: 576px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 export const ServicesData = styled.div`
@@ -33,6 +37,10 @@ export const ServicesTitle = styled.h3`
   margin-bottom: ${({ theme }) => theme.margin.mb_2};
   color: ${({ theme }) => theme.color.firstColor};
   font-size: ${({ theme }) => theme.font.h3fontSize};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.h3fontSize};
+  }
 `;
 
 export const ServicesDescription = styled.p`
