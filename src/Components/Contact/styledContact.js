@@ -43,7 +43,12 @@ export const ContactSocial = styled.a`
   margin: 0 ${({ theme }) => theme.margin.mb_1};
 `;
 
-export const ContactForm = styled.form``;
+export const ContactForm = styled.form`
+  @media screen and (min-width: 576px) {
+    width: 450px;
+    justify-self: center;
+  }
+`;
 
 export const ContactInputs = styled.div`
   display: grid;
