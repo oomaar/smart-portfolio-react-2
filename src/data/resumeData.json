@@ -168,5 +168,10 @@
       "name": "Clay Mitchell",
       "description": "This company does a very good service, offers the best deals and does a good job, I recommend it."
     }
-  ]
+  ],
+  "contact": {
+    "location": "#123 Lima-peru",
+    "email": "email@gmail.com",
+    "phone": "+0-999-888-777"
+  }
 }

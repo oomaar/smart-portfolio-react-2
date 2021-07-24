@@ -4,6 +4,7 @@ import styled from "styled-components/macro";
 import {
   About,
   Contact,
+  Footer,
   Header,
   Home,
   Portfolio,
@@ -30,7 +31,7 @@ const App = () => {
           <Project />
           <Portfolio data={resumeData.portfolio} />
           <Testimonial data={resumeData.testimonial} />
-          <Contact />
+          <Contact data={resumeData.contact} />
         </Main>
       </Application>
     </ThemeProvider>

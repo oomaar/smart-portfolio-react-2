@@ -13,7 +13,7 @@ import {
     TextArea,
 } from "./styledContact";
 
-export const Contact = () => {
+export const Contact = ({ data }) => {
     return (
         <Section id="contact">
             <Container>
@@ -27,7 +27,7 @@ export const Contact = () => {
                                 <i className="bx bx-home"></i>
                             </ContactIcon>
                             <ContactTitle>Location</ContactTitle>
-                            <ContactText>#123 Lima-peru</ContactText>
+                            <ContactText>{data.location}</ContactText>
                         </ContactBox>
 
                         <ContactBox>
@@ -35,7 +35,7 @@ export const Contact = () => {
                                 <i className="bx bx-envelope"></i>
                             </ContactIcon>
                             <ContactTitle>Email</ContactTitle>
-                            <ContactText>email@gmail.com</ContactText>
+                            <ContactText>{data.email}</ContactText>
                         </ContactBox>
 
                         <ContactBox>
@@ -43,7 +43,7 @@ export const Contact = () => {
                                 <i className="bx bx-phone"></i>
                             </ContactIcon>
                             <ContactTitle>Phone</ContactTitle>
-                            <ContactText>+0-999-888-777</ContactText>
+                            <ContactText>{data.phone}</ContactText>
                         </ContactBox>
 
                         <ContactBox>
