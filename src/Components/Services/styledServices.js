@@ -3,6 +3,10 @@ import styled from 'styled-components/macro';
 export const ServicesContainer = styled.div`
   display: grid;
   gap: 1.5rem;
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const ServicesData = styled.div`
