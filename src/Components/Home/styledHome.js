@@ -1,12 +1,12 @@
 import styled from 'styled-components/macro';
 
 export const HomeContainer = styled.div`
-  color: #fff;
   display: grid;
   gap: 1.5rem;
+  color: #fff;
   position: relative;
   height: calc(100vh - ${({ theme }) => theme.HeaderHeight});
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2fr, max-content);
   align-content: space-around;
   row-gap: 2rem;
 `;
@@ -47,7 +47,7 @@ export const HomeSocialIcon = styled.a`
   color: ${({ theme }) => theme.color.firstColorLighten};
 
   :hover {
-      color: ${({ theme }) => theme.color.firstColorLight};
+    color: ${({ theme }) => theme.color.firstColorLight};
   }
 `;
 
@@ -59,4 +59,8 @@ export const HomeImage = styled.div`
 
 export const Image = styled.img`
   width: 240px;
+
+  @media screen and (min-width: 576px) {
+    width: 330px;
+  }
 `;
