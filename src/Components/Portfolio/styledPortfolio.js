@@ -13,6 +13,10 @@ const animate = keyframes`
 export const PortfolioContainer = styled.div`
   display: grid;
   gap: 1.5rem;
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const PortfolioNav = styled.div`
