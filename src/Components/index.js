@@ -8,3 +8,4 @@ export { Project } from "./Project/Project";
 export { Portfolio } from "./Portfolio/Portfolio";
 export { Testimonial } from "./Testimonial/Testimonial";
 export { Contact } from "./Contact/Contact";
+export { Footer } from "./Footer/Footer";
