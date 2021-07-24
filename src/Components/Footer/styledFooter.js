@@ -14,6 +14,10 @@ export const FooterTitle = styled.h1`
   font-size: ${({ theme }) => theme.font.h1FontSize};
   margin-bottom: ${({ theme }) => theme.margin.mb_1};
   font-weight: ${({ theme }) => theme.font.fontWeight.semiBold};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.h1FontSize};
+  }
 `;
 
 export const FooterDescription = styled.p`
@@ -38,4 +42,8 @@ export const FooterSocialIcon = styled.a`
 export const FooterCopy = styled.p`
   font-size: ${({ theme }) => theme.font.smallerFontSize};
   color: ${({ theme }) => theme.color.firstColorLight};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.smallerFontSize};
+  }
 `;

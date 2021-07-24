@@ -22,6 +22,7 @@ export const AboutDescription = styled.p`
   
   @media screen and (min-width: 768px) {
     text-align: initial;
+    font-size: ${({ theme }) => theme.resFont.h2FontSize};
   }
 `;
 
@@ -40,6 +41,10 @@ export const AboutNumber = styled.span`
   display: block;
   font-size: ${({ theme }) => theme.font.h1FontSize};
   color: ${({ theme }) => theme.color.firstColor};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.h1FontSize};
+  }
 `;
 
 export const AboutImage = styled.img`

@@ -60,11 +60,19 @@ export const PortfolioData = styled.div`
 
 export const PortfolioSubtitle = styled.span`
   font-size: ${({ theme }) => theme.font.smallFontSize};
-  color: ${({ theme }) => theme.color.firstColorLight};  
+  color: ${({ theme }) => theme.color.firstColorLight};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.smallFontSize};
+  }
 `;
 
 export const Title = styled.h3`
   font-size: ${({ theme }) => theme.font.h3FontSize};
   color: ${({ theme }) => theme.color.firstColor};
   margin: ${({ theme }) => theme.margin.mb_2} 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.h3FontSize};
+  }
 `;

@@ -33,9 +33,15 @@ export const ContactTitle = styled.h3`
   color: ${({ theme }) => theme.color.firstColor};
   font-size: ${({ theme }) => theme.font.h3FontSize};
   margin: ${({ theme }) => theme.margin.mb_1} 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.h3FontSize};
+  }
 `;
 
-export const ContactText = styled.span``;
+export const ContactText = styled.span`
+  font-size: 1.1rem;
+`;
 
 export const ContactSocial = styled.a`
   color: ${({ theme }) => theme.color.firstColorLight};
@@ -66,6 +72,10 @@ export const Input = styled.input`
   color: ${({ theme }) => theme.color.firstColor};
   border-radius: 0.5rem;
   margin-bottom: ${({ theme }) => theme.margin.mb_1};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.normalFontSize};
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -78,4 +88,8 @@ export const TextArea = styled.textarea`
   color: ${({ theme }) => theme.color.firstColor};
   border-radius: 0.5rem;
   margin-bottom: ${({ theme }) => theme.margin.mb_1};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.normalFontSize};
+  }
 `;

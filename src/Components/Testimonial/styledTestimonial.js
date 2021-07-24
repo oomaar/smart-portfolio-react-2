@@ -40,11 +40,19 @@ export const TestimonialImage = styled.img`
 
 export const TestimonialName = styled.h3`
   font-size: ${({ theme }) => theme.font.h3FontSize};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.h3FontSize};
+  }
 `;
 
 export const TestimonialClient = styled.span`
   font-size: ${({ theme }) => theme.font.smallFontSize};
   color: ${({ theme }) => theme.color.firstColorLight};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${({ theme }) => theme.resFont.smallFontSize};
+  }
 `;
 
 export const TestimonialDescription = styled.p`

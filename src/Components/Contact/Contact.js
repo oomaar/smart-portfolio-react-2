@@ -53,7 +53,7 @@ export const Contact = ({ data }) => {
                             <ContactTitle>Chat</ContactTitle>
                             <div>
                                 <ContactSocial href="#">
-                                    <i className="bx bxl-whatsapp-square"></i>
+                                    <i className="bx bxl-whatsapp"></i>
                                 </ContactSocial>
                                 <ContactSocial href="#">
                                     <i className="bx bxl-telegram"></i>
