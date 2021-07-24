@@ -3,6 +3,10 @@ import styled from 'styled-components/macro';
 export const QualificationContainer = styled.div`
   display: grid;
   row-gap: 2.5rem;
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const QualificationTitle = styled.h3`
