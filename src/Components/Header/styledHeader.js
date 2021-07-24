@@ -1,5 +1,17 @@
-import styled from "styled-components/macro";
+import styled, { keyframes } from "styled-components/macro";
 import { Link as ScrollLink } from "react-scroll";
+
+const NavAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const HeaderTag = styled.header`
   background-color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorLighten : '#000'};
@@ -24,6 +36,7 @@ export const Nav = styled.nav`
 
 export const Logo = styled.a`
   color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorDark : theme.color.firstColorLighten};
+  animation: ${NavAnimation} 2s linear none 0.5s;
 `;
 
 export const NavMenu = styled.div`
@@ -63,6 +76,7 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   margin-bottom: ${({ theme }) => theme.margin.mb_4};
+  animation: ${NavAnimation} 2s linear none 0.5s;
 
   @media screen and (min-width: 768px) {
     margin: 0 ${({ theme }) => theme.margin.mb_3};
@@ -81,6 +95,7 @@ export const NavToggle = styled.div`
   color: ${({ theme, scrollHeader }) => scrollHeader ? theme.color.firstColorDark : theme.color.firstColorLighten};
   font-size: 1.3rem;
   cursor: pointer;
+  animation: ${NavAnimation} 2s linear none 0.5s;
 
   @media screen and (min-width: 768px) {
     display: none;
